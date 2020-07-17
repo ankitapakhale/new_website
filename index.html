@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Abhaya Information Technology</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+
+  <script type="text/javascript" src="index.js">
+
+  </script>
+</head>
+
+<body>
+  <nav id="navbar">
+    <ul>
+      <li class="logo">Abhaya Global Information Technology</li>
+      <div class="items">
+        <li class="item_name"><a href="#top_container">Home</a></li>
+        <li class="item_name"><a href="#container_fifth">About</a></li>
+        <li class="item_name"><a href="#contact">Contact</a></li>
+      </div>
+
+    </ul>
+  </nav>
+  <div class="top_container">
+    <a href="#top_container"> <img class="main_logo" src="images/Abhaya_logo.png" alt=""></a>
+
+    <h1 class="h1">HOW IT WORKS FOR YOU</h1>
+
+    <p class="details">
+      A palm held Patient monitor (Mini Bedside Monitor) is integrated with Advait Home Health.All data collected is
+      time stamped and saved real time in secure HIPPA certified encrypted Server.
+    </p>
+
+    <table>
+      <tr>
+        <td class="image_row1">
+          <img class="ecg_icon" src="images/ECG.jpg" alt="">
+          <h4 class="ecg">ECG</h4>
+        </td>
+        <td class="image_row1"><img class="o2_icon" src="images/oxygen.png" alt="">
+          <h4 class="o2">SPO2</h4>
+        </td>
+        <td class="image_row1"> <img class="BP_icon" src="images/BP.jpg" alt="">
+          <h4 class="BP">Blood Pressure</h4>
+        </td>
+      </tr>
+      <tr>
+        <td class="image_row2">
+          <img class="heart_icon" src="images/heart.jpg" alt="">
+          <h4 class="heart">Heart Rate</h4>
+        </td>
+        <td class="image_row2">
+          <img class="respiration_icon" src="images/Respiration.jpg" alt="">
+          <h4 class="RR">Respiration</h4>
+        </td>
+        <td class="image_row2"> <img class="celsius_icon" src="images/celsius.jpg" alt="">
+          <h4 class="celsius">Temperature</h4>
+        </td>
+      </tr>
+    </table>
+
+
+    <div class="second_container">
+
+      <div class="tab">
+        <button class="tablinks" onclick="openEvent(event, 'PG')">PULSE GRAPH</button>
+        <button class="tablinks" onclick="openEvent(event, 'BP')">BP GRAPH</button>
+        <button class="tablinks" onclick="openEvent(event, 'VM')">VIRTUAL MONITOR</button>
+        <button class="tablinks" onclick="openEvent(event, 'AS')">AMBULATORY SERVICES</button>
+
+      </div>
+
+      <!-- Tab content -->
+      <div id="PG" class="tabcontent">
+        <h3 class="title">PULSE RATE</h3>
+        <img class="images_chart" src="images/chart1.png" alt="">
+      </div>
+
+      <div id="BP" class="tabcontent">
+        <h3 class="title">Systolic and Diastolic Comparison.</h3>
+        <img src="images/chart2.png" alt="">
+      </div>
+
+      <div id="VM" class="tabcontent">
+        <h3 class="title">Real time data monitoring.</h3>
+        <img class="images_chart" src="images/chart3.png" alt="">
+      </div>
+
+      <div id="AS" class="tabcontent">
+        <h3 class="title">Share vitals when on the way <br> from home to hospital.</h3>
+        <img class="images_chart" src="images/chart4.png" alt="">
+      </div>
+
+    </div>
+
+    <div class="third_container">
+
+      <img class="img_PM" src="images/patient-monitor.png" alt="">
+      <h1 class="heading_tc">Patient Monitor</h1>
+      <h3 class="heading2_tc">Get data anytime, anywhere from patient to doctor.</h3>
+
+    </div>
+
+    <!-- fourth_container -->
+
+
+    <div class="fourth_container">
+      <h1 class="heading_fc">OUR CLIENTS</h1>
+      <div class="tab">
+        <button class="tablinks" onclick="openEvent(event, 'HC')">HOME CARE</button>
+        <button class="tablinks" onclick="openEvent(event, 'HOS')">HOSPITAL</button>
+      </div>
+
+      <!-- Tab content -->
+      <div id="HC" class="tabcontent">
+
+        <div class="review_card1">
+          <img class="userpic" src="images/userpic.png" alt="Avatar">
+          <p class="review">eCare, P.S.C. in Louisville, Kentucky is a health care corporation
+            that provides high-quality behavioral and medical care through telemedicine services.</p><br>
+          <h3 class="username">eCare,P.S.C</h3>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+        </div>
+
+        <div class="review_card2">
+
+          <img class="userpic" src="images/userpic.png" alt="Avatar">
+          <p class="review">Pulmonary Apps is a team of experts with medical device, regulatory, engineering, medical,
+            and business development experience.</p><br>
+          <h3 class="username">Pulmonary Apps</h3>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+        </div>
+
+
+      </div>
+
+      <div id="HOS" class="tabcontent">
+        <div class="review_card3">
+
+          <img class="userpic" src="images/userpic.png" alt="Avatar">
+
+          <h3 class="username">Centerstone Integrated Care</h3>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+        </div>
+      </div>
+
+      <div id="container_fifth" class="fifth_container">
+
+        <h1 class="heading_about">ABOUT US</h1>
+        <h3 class="info_about">Abhaya Information Technology LLP(Abhaya) was founded by Tarak Nagaraj and is focused on providing IoT solutions that would make an
+          <br>impact in the betterment of our lives.</h3>
+
+      </div>
+
+
+      <div class="sixth_container">
+
+        <h1 class="heading_about">OUR SOLUTIONS</h1><br>
+        <h4 class="heading_solutions"> Advait Telemedicine.</h4>
+        <h4 class="heading_solutions">Advait Home Health</h4>
+        <h4 class="heading_solutions"> Virtual Monitor </h4>
+
+      </div>
+
+
+      <div id="contact" class="form_div">
+
+        <h1 class="heading_bottom">Schedule a demo ?</h1>
+
+        <form action="connect.php" method="post">
+
+          <input class="text" type="text" placeholder="First Name" name="fname" id="fname" required>
+
+          <input class="text" type="text" placeholder="Last Name" name="lname" id="lname" required> <br><br>
+
+          <input class="text" type="text" placeholder="Email" name="email" id="email" required>
+
+          <input class="text" type="text" placeholder="Mobile Number" name="number" id="number" required> <br><br>
+          <input class="text_cname" type="text" placeholder="Company Name" name="cname" id="cname" required> <br><br>
+
+          <textarea name="query" rows="8" cols="10" placeholder="Write your query"></textarea> <br>
+
+          <button class="btn_form" type="button" name="button">Submit</button>
+
+        </form>
+      </div>
+
+
+      <div class="bottom_container">
+
+
+        <p class="bottom_p">Illinois, USA</p>
+        <p class="bottom_p">24113 103 Street, Naperville,<br>
+          Illinois, USA 60564</p>
+        <br>
+
+        <p class="bottom_p">Mumbai, IN</p>
+        <p class="bottom_p">L-395/3, Dreams the Mall, Station Road,<br>
+          L.B.S Marg, Bhandup West
+          Mumbai-4000078.</p>
+
+
+      </div>
+
+      <div class="footer">
+
+        <p class="footer_text">© 2018. All rights reserved by Abhaya Information Global Technology Inc.</p>
+
+        <a href="https://play.google.com/store/apps/details?id=com.abhaya.advaithomehealth"><img class="img_footer1" src="images/Google_play.png" alt=""></a>
+        <a href="https://apps.apple.com/us/app/advait-home-health/id1377531463"><img class="img_footer2" src="images/app_store.png" alt=""></a>
+
+
+      </div>
+    </div>
+</body>
+
+</html>
